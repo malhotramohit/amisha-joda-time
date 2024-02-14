@@ -685,7 +685,7 @@
 
 					<configuration>
 						<targetClasses>
-							<param>org.joda.time.field.FieldUtils</param>
+							<param>org.joda.time.field.BaseDateTimeField</param>
 							<!-- <param>org.joda.time.field*</param>
 							<param>org.joda.time.chrono*</param>
 							<param>org.joda.time.convert*</param>
@@ -693,13 +693,18 @@
 							<param>org.joda.time.tz*</param> -->
 						</targetClasses>
 						<targetTests>
-							<param>org.joda.time.TestIllegalFieldValueException</param>
+							<param>org.joda.time.field.TestBaseDateTimeField</param>
 							<!-- <param>org.joda.time.field*</param>
 							<param>org.joda.time.chrono*</param>
 							<param>org.joda.time.convert*</param>
 							<param>org.joda.time.format*</param>
 							<param>org.joda.time.tz*</param> -->
 						</targetTests>
+						<timestampedReports>true</timestampedReports>
+						<verbose>true</verbose>
+						<threads>1</threads>
+						<timeoutConstant>8000</timeoutConstant>
+						
 					</configuration>
 				</plugin>
 				
